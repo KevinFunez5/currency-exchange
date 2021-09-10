@@ -7,13 +7,15 @@
   <div class="container">
     <h1>Exchange Rate</h1>
     <h3>Please enter a US Dollar amount and the currency to exchange it to.</h3>
-    <select class="form-control" id="beverage">
-      <option>Coffee</option>
-      <option>Tea</option>
-      <option>Kombucha</option>
-      <option>Water</option>
-      <input>
+    <input type="text" id="dollar">
+    <select class="form-control" id="currency">
+      <option value="HNL">Honduran Lempiras</option>
+      <option value="MXN">Mexican Pesos</option>
+      <option value="JPY">Japanese Yen</option>
+      <option value="CHF">Swiss Francs</option>
     </select>
+    <button type="button" id="submit" class="btn btn-primary">Submit</button>
+    <div class="displayCurrency"></div>
   </div>
   
 </body>
