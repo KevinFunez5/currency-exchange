@@ -18,7 +18,7 @@ $(document).ready(function() {
     request.open("GET", url, true);
     request.send();
     function getElements(response) {
-      $('.displayCurrency').html(`Currency Exchange Rate: ${response.conversion_rates[currency]}`);
+      $('.displayRate').html(`Currency Exchange Rate: ${response.conversion_rates[currency]}`);
     }
   });
 });

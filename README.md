@@ -1,3 +1,8 @@
+I need to take users input and convert into whatever currency the user chooses. 
+
+
+
+
 # (Application Name)
 
 #### (Brief Description of Application)
