@@ -7,7 +7,7 @@
   <div class="container">
     <h1>Exchange Rate</h1>
     <h3>Please enter a US Dollar amount and the currency to exchange it to.</h3>
-    <input type="text" id="dollar">
+    <input type="number" id="dollar" min="0">
     <select class="form-control" id="currency">
       <option value="HNL">Honduran Lempiras</option>
       <option value="MXN">Mexican Pesos</option>
@@ -17,6 +17,7 @@
     </select>
     <button type="button" id="submit" class="btn btn-primary">Submit</button>
     <div class="displayRate"></div>
+    <div class="displayExchange"></div>
   </div>
   
 </body>
