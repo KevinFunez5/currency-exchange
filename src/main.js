@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('#submit').click(function() {
     let currency = $('#currency').val();
     let request = new XMLHttpRequest();
-    const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`;
+    const url = `https://v6.exchangerate-api.com/v6/007304291feade653405d100/latest/USD`;
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
         const response = JSON.parse(this.responseText);
