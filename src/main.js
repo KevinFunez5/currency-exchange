@@ -6,6 +6,8 @@ import './css/styles.css';
 $(document).ready(function() {
   $('#submit').click(function() {
     let currency = $('#currency').val();
+    let input = $('#dollar').val();
+    parseInt(input);
     let request = new XMLHttpRequest();
     const url = `https://v6.exchangerate-api.com/v6/007304291feade653405d100/latest/USD`;
     request.onreadystatechange = function() {
@@ -15,10 +17,12 @@ $(document).ready(function() {
       }
     };
     console.log(currency);
+    console.log(input);
     request.open("GET", url, true);
     request.send();
     function getElements(response) {
       $('.displayRate').html(`Currency Exchange Rate: ${response.conversion_rates[currency]}`);
+      $('.displayExchange').html(`Amount in ${currency}: ${response.conversion_rates[currency] * input}`);
     }
   });
 });
