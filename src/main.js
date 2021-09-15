@@ -24,21 +24,6 @@ $(document).ready(function() {
       $('.displayExchange').html(`Amount in ${currency}: ${body.conversion_rates[currency] * input}`);
 
     });
-    // parseInt(input);
-    // let request = new XMLHttpRequest();
-    // const url = `https://v6.exchangerate-api.com/v6/007304291feade653405d100/latest/USD`;
-    // request.onreadystatechange = function() {
-    //   if (this.readyState === 4 && this.status === 200) {
-    //     const response = JSON.parse(this.responseText);
-    //     getElements(response);
-    //   }
-    // };
-    // request.open("GET", url, true);
-    // request.send();
-    // function getElements(response) {
-    //   $('.displayRate').html(`Currency Exchange Rate: ${response.conversion_rates[currency]}`);
-    //   $('.displayExchange').html(`Amount in ${currency}: ${response.conversion_rates[currency] * input}`);
-    // }
     try {
       const isinputValid = checkAmount(input);
       if (isinputValid instanceof Error){
